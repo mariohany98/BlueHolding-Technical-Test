@@ -100,3 +100,51 @@ navigate to GitHub settings on the UI >>>>>> SSH and GPG keys >>>>>> Add new SSh
 
 paste the public key and save
 
+## Clone the repository to my local machine
+
+git clone git@github.com:mariohany98/BlueHolding-Technical-Test.git
+
+## Next.js application Containerization
+
+1. **Navigate to the code repository:**
+
+cd ./BlueHolding-Technical-Test/intranet-front-main
+
+2. **Create Dockerfile for Next.js app**
+
+vim Dockerfile
+
+![Screenshot 2023-09-21 213146](https://github.com/mariohany98/BlueHolding-Technical-Test/assets/143083001/dbfcbc8e-27bb-4790-a4c5-35ac55bb1931)
+
+3. **Create a .dockerignore file:**
+
+vim .dockerignore
+
+and put the follwing files names inside it:
+
+node_modules
+
+npm-debug.log
+
+.DS_Store
+
+4. **Build docker image**
+
+sudo docker build -t next-app .
+
+5. **login to DockerHub repository to push the image**
+
+sudo docker login
+
+6. **Tag the Docker image**
+
+note:Before pushing the image to Docker Hub, I need to tag it with my Docker Hub username and the desired repository name
+
+sudo docker tag next-app mariohany98/nextjs-app:latest
+
+7. **Push the Docker Image to DockerHub:**
+
+sudo docker push mariohany98/nextjs-app:latest
+
+## PHP Laravel application Containerization
+

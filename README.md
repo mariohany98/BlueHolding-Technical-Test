@@ -70,6 +70,32 @@ sudo systemctl start docker
 
 sudo systemctl enable docker
 
+## Git installation 
 
+1. **Install git**
 
+sudo apt install git
+
+2. **configure git**
+
+sudo git config --global user.name "mariohany98"
+sudo git config --global user.email "mariohany98@gmail.com"
+
+## Generate SSH Key Pair To securely connect to Git repositories using SSH
+
+1. **install ssh**
+
+sudo apt install ssh
+
+2. **generate a private and public key pair**
+
+ssh-keygen -t rsa
+
+3. **copy the public key to git server**
+
+copy the content of the following file: /home/mario/.ssh/id_rsa.pub
+
+navigate to GitHub settings on the UI >>>>>> SSH and GPG keys >>>>>> Add new SSh key
+
+paste the public key and save
 

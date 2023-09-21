@@ -1,0 +1,42 @@
+.notifation {
+    position: relative;
+    width: fit-content;
+}
+
+.notifation i{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.badge {
+    position: absolute;
+    top: -3px;
+    right: -1px;
+    display: block;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: red;
+    border: 2px solid #022256;
+}
+
+.ul {
+    list-style: none;
+    padding: 1rem;
+    border-radius: 5px;
+    background: #41597D;
+    box-shadow: 3px 4px 34px 0px #022256;
+    width: 200px;
+    position: absolute;
+    top: 55px;
+    left: -75px;
+}
+
+
+.ul li {
+    padding-bottom: 10px;
+    margin-bottom: 8px;
+}
+.ul li:not(:last-child) {
+    border-bottom: 1px solid #8092B0;
+}

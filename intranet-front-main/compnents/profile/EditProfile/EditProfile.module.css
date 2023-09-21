@@ -1,0 +1,108 @@
+.formContent {
+    padding: 1.5rem;
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.formContent input[type="text"], .formContent input[type="email"] {
+    width: 100%;
+}
+
+.formContent input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.formContent .error { 
+    color: red;
+}
+
+.formContent label {
+    display: block;
+    color: var(--labelInp);
+}
+
+.action button {
+    background-color: var(--BtnBG) !important;
+    color: var(--BtnText) !important;
+    font-weight: 600;
+    padding: 12px 16px 12px 16px;
+    border-radius: 10px;
+}
+
+.formContent input[type="text"], .formContent input[type="email"], .formContent select {
+    background-color: var(--BGINBG) !important;
+    padding: 12px 16px 12px 16px;
+    border-radius: 5px;
+    max-height: 250px;
+}
+
+.formContent button, .formContent input[type="text"], .formContent input[type="email"], .action button, .formContent select {
+    background: unset;
+    border: unset;
+    outline: unset;
+    color: var(--Text);
+    resize: unset;
+}
+
+.formContent select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("/dummy-images/arrow-down.png");
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: center;
+}
+
+.disabledAction {
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+
+.dropzone {
+    height: 48px;
+    width: 88%;
+    background-color: var(--BtnBG);
+    border-radius: 10px;
+    color: var(--BtnText);
+    cursor: pointer;
+}
+
+.dropzoneWrapper > div:first-child {
+    height: 150px;
+}
+.dropzoneWrapper button {
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--deleteBtn) !important;
+    border-radius: 10px;
+    border: unset;
+    outline: unset;
+    color: #fff;
+    resize: unset;
+}
+
+.dropzoneWrapper image {
+    border: 2px solid #FFFFFF;
+}
+
+.inputListParent {
+    z-index: 1;
+}
+.inputList {
+    background-color: var(--BGINBG);
+    border-radius: 10px;
+    max-height: 233px;
+    overflow-y: auto;
+
+}
+.inputList li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.inputList li:not(:last-child) {
+    border-bottom: 1px solid var(--Border);
+}

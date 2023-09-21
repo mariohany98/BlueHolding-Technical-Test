@@ -1,0 +1,66 @@
+.formContent {
+    padding: 1.5rem;
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.formContent input, .formContent textarea {
+    width: 100%;
+}
+
+.formContent .error { 
+    color: red;
+}
+
+.formContent label {
+    display: block;
+    color: var(--labelInp);
+}
+
+.action button {
+    background-color: var(--BtnBG) !important;
+    color: var(--BtnText) !important;
+    font-weight: 600;
+    padding: 0.75rem 1rem 0.75rem 1rem;
+    border-radius: 10px;
+}
+.formContent div:nth-child(2) > button {
+    border: 1px solid var(--labelInp);
+    background-color: transparent;
+    font-weight: 400;
+    padding: 0.75rem 1rem 0.75rem 1rem;
+    border-radius: 10px;
+}
+
+.formContent textarea, .formContent input, .formContent select, .formContent option {
+    background-color: var(--BGINBG) !important;
+    padding: 0.75rem 1rem 0.75rem 1rem;
+    border-radius: 5px;
+    max-height: 250px;
+}
+
+.formContent textarea, .formContent button, .formContent .option input, .action button, .formContent select {
+    background: unset;
+    border: unset;
+    outline: unset;
+    color: var(--Text);
+    resize: unset;
+}
+
+.formContent select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("/dummy-images/arrow-down.png");
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: center;
+}
+
+.formContent textarea::placeholder {
+    color: var(--SubText);
+    opacity: 1; /* Firefox */
+}
+
+.formContent textarea:-ms-input-placeholder {
+    color: var(--SubText);
+}

@@ -1,0 +1,46 @@
+.cardContainer {
+  max-width: 100%;
+  background-color: var(--InfoCardBG);
+  border-radius: 10px;
+  margin: 0 0 24px 0;
+}
+
+.cardContainer:last-of-type{
+  margin-bottom: 0;
+}
+
+.cardContainer svg{
+  cursor: pointer;
+  /* font-size: 1.5rem; */
+}
+
+.headerContainer {
+  padding: 1rem 27px;
+  background-color: var(--InfoCardHeaderBG);
+  border-radius: 10px 10px 0px 0px;
+}
+
+.headerContainer h4 {
+  font-weight: 700;
+}
+
+.bodyContainer {
+  padding: 24px 27px;
+}
+
+.iconConatiner {
+  position: relative;
+}
+
+.iconConatiner svg {
+  color: var(--TextIcons);
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.iconConatiner button {
+  background: unset;
+  border: unset;
+  outline: unset;
+  resize: unset;
+}

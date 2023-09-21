@@ -1,0 +1,40 @@
+.SubcardContainer {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 1rem;
+}
+
+.SubcardContainer:last-of-type{
+  margin-bottom: 0;
+}
+
+.SubcardContainer h5 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.SubcardContainer small {
+  display: block;
+}
+
+.SubcardContainer small:first-of-type {
+  font-weight: 600;
+}
+
+.iconConatiner {
+  position: relative;
+}
+
+.iconConatiner svg {
+  color: var(--TextIcons);
+  cursor: pointer;
+  /* font-size: 24px; */
+}
+
+.iconConatiner button {
+  background: unset;
+  border: unset;
+  outline: unset;
+  /* font-size: 1rem; */
+}

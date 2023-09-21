@@ -1,0 +1,39 @@
+.pollWrapper {
+    margin: 0rem 1.5rem;
+    padding: 1.5rem;
+    background-color: var(--upcomingCardTitle);
+    border-radius: 10px;
+    border: 1px solid var(--Border);
+}
+
+.pollWrapper button {
+    background-color: var(--BtnBG);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: unset;
+
+}
+
+.pollWrapper ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pollWrapper ul li {
+    border: 1px solid var(--Border);
+    padding: 1rem;
+    margin: 1rem 0rem;
+    border-radius: 10px;
+    color: var(--Text);
+
+    /* For Poll Posted */
+    background-image: linear-gradient(to right, var(--pollPercentage), var(--pollPercentage));
+    background-repeat: no-repeat;
+    background-position: 0%;
+}
+
+/* For Poll Posted */
+/* .pollWrapper ul li span {
+    mix-blend-mode: difference;
+} */

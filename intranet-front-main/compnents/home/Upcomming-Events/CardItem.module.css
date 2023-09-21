@@ -1,0 +1,68 @@
+.fullCard {
+  /* width: 332px; */
+  margin-top: 15px;
+  margin-left: 8px;
+  margin-right:8px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  background-color: var(--upcomingCardWrapper);
+  padding: 5px 5px;
+}
+.Imagebg {
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding: 2px 5px;
+}
+
+.Header {
+  display: flex;
+  font-size: 1rem;
+  padding: 5px 5px;
+  gap: 5px;
+}
+.HeaderTitle {
+  margin: 1px 5px;
+}
+.HeaderTitle > p:nth-child(1) {
+  
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+}
+.HeaderTitle > p:nth-child(2) {
+  font-size: 13px;
+  margin-top: -15px;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--upcomingText);
+
+}
+.fullCard > div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  padding: 1px 5px 10px 5px;
+  line-height: 0.6;
+  align-items: center;
+  margin-bottom: -5px;
+}
+.fullCard > div:nth-child(2) > div {
+  border: 1px solid var(--upcomingBorder);
+  border-radius: 8px;
+  display: table-column;
+  align-items: center;
+  padding: 15px 18px 0px 1rem;
+  gap: 2px;
+  
+}
+
+.fullCard>div:nth-child(2)>div> p:nth-child(1){
+  font-weight: 600;
+}
+.fullCard>div:nth-child(2)>div> p:nth-child(1){
+  font-weight: 500;
+  color: var(--upcomingText);
+}

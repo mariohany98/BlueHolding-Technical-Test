@@ -1,0 +1,13 @@
+# *
+User-agent: *
+Disallow: /404
+
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://intranet.blueholding.co.uk/
+
+# Sitemaps
+Sitemap: https://intranet.blueholding.co.uk/sitemap.xml

@@ -1,0 +1,86 @@
+.scheduleForm .error {
+    color: red;
+}
+
+.scheduleForm input, .scheduleForm button {
+    background: unset;
+    border: unset;
+    outline: unset;
+    color: var(--Text);
+    resize: unset;
+}
+
+.formContent {
+    padding: 1.5rem;
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.formContent label {
+    color: var(--labelInp);
+}
+
+.date, .timeWrapper {
+    background-color: var(--BGINBG) !important;
+    border-radius: 5px;
+}
+.date input[type='date'] {
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: center;
+    padding: 0.75rem 1rem 0.75rem 1rem;
+    width: 100%;
+    color: var(--Text);
+}
+.date input[type='date']::-webkit-calendar-picker-indicator {
+    background-image: url("/dummy-images/schedule-post.png");
+}
+
+
+.timeWrapper, .dropdownWrapper {
+    min-height: 80px;
+}
+ .dropdownWrapper *  {
+    outline: none !important;
+}
+
+
+.timeWrapper select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    top: 0;
+    background-color: transparent;
+    height: 100%;
+    color: var(--text);
+}
+
+.timeWrapper select option {
+    background-color: var(--BGINBG) !important;
+    border-bottom: 1px solid var(--Border);
+}
+
+
+/* for eslam to see it before delete it */
+/* .date input::-webkit-datetime-edit { padding: 1em; }
+.date input::-webkit-datetime-edit-fields-wrapper { background: silver; }
+.date input::-webkit-datetime-edit-text { color: red; padding: 0 0.3em; }
+.date input::-webkit-datetime-edit-month-field { color: blue; }
+.date input::-webkit-datetime-edit-day-field { color: green; }
+.date input::-webkit-datetime-edit-year-field { color: purple; }
+.date input::-webkit-inner-spin-button { display: none; }
+.date input::-webkit-calendar-picker-indicator { background: orange; } */
+/* .date input::-webkit-calendar-picker-indicator {
+    filter: invert(100%);
+} */
+/* .date input::-webkit-clear-button {
+    font-size: 15px;
+} */
+
+
+.action button {
+    background-color: var(--BtnBG) !important;
+    color: var(--BtnText) !important;
+    font-weight: 600;
+    padding: 0.75rem 1rem 0.75rem 1rem;
+    border-radius: 10px;
+}

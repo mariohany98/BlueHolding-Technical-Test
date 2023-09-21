@@ -1,0 +1,125 @@
+.mobileMenu {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999999;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeInRight;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+
+.mobileMenuOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--overlay);
+  opacity: 0.7;
+}
+
+.mobileMenuInner {
+  overflow-y: auto;
+  max-width: 350px;
+  background-color: var(--navBg);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  padding: 30px;
+}
+
+.mobileMenuTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobileMenuClose {
+  color: var(--Text);
+  font-size: 1rem;
+}
+
+.mobileMenuClose:active,
+.mobileMenuClose:focus,
+.mobileMenuClose:hover {
+  color: var(--Text);
+}
+
+.mobileMenuLogo {
+  /* text-transform: uppercase;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: -0.03em; */
+}
+
+/* .mobileMenuLogo a {
+    color: inherit;
+} */
+
+.mobileMenuLinks {
+  margin-top: 20px;
+}
+
+.mobileMenuLinks ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mobileMenuLinks ul li a {
+  display: block;
+  color: var(--Text);
+  text-transform: none;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 45px;
+  font-size: 18px;
+  border-bottom: 1px solid var(--Border);
+}
+
+
+
+.menuItemHasChildren button {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  background-color: var(--secondaryColor);
+  width: 35px;
+  height: 35px;
+  border: none;
+  outline: none;
+  color: var(--primaryColor);
+}
+
+
+.mobileMenuText {
+  font-size: 1rem;
+  line-height: 1.6em;
+  font-weight: 500;
+  color: #a0a0a0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.mobileMenuToggler {
+  margin-inline-end: 30px;
+}
+.active {
+  color: var(--secondaryColor) !important;
+}

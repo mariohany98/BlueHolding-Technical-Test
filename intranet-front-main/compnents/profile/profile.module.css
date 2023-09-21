@@ -1,0 +1,59 @@
+.profileContainer {
+  background-color: var(--cardWrapper);
+  border-radius: 10px;
+  padding: 24px;
+  margin-bottom: 8px;
+}
+
+.header {
+  border-bottom: 1px solid var(--Border);
+}
+
+.leftSection {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.circle {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+.circle.active {
+  background-color: #6dae4f;
+}
+
+.iconConatiner {
+  position: relative;
+}
+
+.iconConatiner svg {
+  color: var(--TextIcons);
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.iconConatiner button {
+  background: unset;
+  border: unset;
+  outline: unset;
+  resize: unset;
+}
+
+
+.contactContainer div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contactContainer div h5 {
+  margin: 0;
+  font-weight: 700;
+}

@@ -1,0 +1,46 @@
+.popup {
+    width: 50vw;
+    position: fixed;
+    z-index: 1001;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    background-color: var(--BG);
+}
+
+.popup header {
+    border-bottom: 1px solid var(--Border);
+    padding: 1.5rem;
+}
+
+.popup header button {
+    background-color: var(--IconXBG) !important;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.popup footer {
+    border-top: 1px solid var(--Border);
+    padding: 1.5rem;
+}
+
+.popup footer button,
+.popup header button {
+    background: unset;
+    border: unset;
+    outline: unset;
+    color: var(--Text);
+    resize: unset;
+}
+.popup header button {
+    color: #fff;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .popup {
+        width: 90vw;
+    }
+}

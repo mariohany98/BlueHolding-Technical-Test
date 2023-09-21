@@ -1,0 +1,51 @@
+.empTable, .empTableActions, .bestFive {
+    background-color: var(--cardWrapper);
+    border-radius: 10px;
+    border-bottom-left-radius: unset;
+    border-bottom-right-radius: unset;
+    color: var(--primary-color);
+    width: 100%;
+    max-width: 440px;
+    margin: 0 auto;
+}
+.empTableActions { border-radius: 10px; border-top-left-radius: unset; border-top-right-radius: unset;}
+
+.empTable thead tr, .bestFive thead tr {
+    height: 60px;
+}
+
+.empTable thead td,
+.empTable tbody td, 
+.bestFive thead td,
+.bestFive tbody td,
+.empTableActions tbody td {
+    padding: 15px 5px;
+}
+
+.empTable thead td,
+.empTable tr td,
+.bestFive thead td,
+.bestFive tr:not(:last-child) td {
+    border-bottom: 1px solid #ddd;
+}
+
+.empTable p, .bestFive p { margin: 0; }
+
+.empTableActions button {
+    padding: 0.75rem 8px 0.75rem 8px;
+    background-color: rgba(65, 88, 124, 0.5);
+    border-radius: 5px;
+    border: unset;
+    color: #fff;
+    width: 6rem;
+}
+
+
+.empTableActions button{
+    color: var(--Text);
+    background-color: var(--paginationBtn);
+}
+
+.disabled{
+    pointer-events: none;
+}

@@ -1,0 +1,14 @@
+.createPost {
+    border-radius: 10px;
+    background-color: var(--cardWrapper);
+}
+
+.createPost header {
+    border-bottom: 1px solid #ddd;
+    padding: 1rem;
+}
+
+.createPost div {
+    padding: 1rem;
+    cursor: pointer;
+}

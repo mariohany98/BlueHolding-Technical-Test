@@ -1,0 +1,61 @@
+.input {
+  height: 46px;
+  border-radius: 5px;
+  background: var(--searchBG);
+  width: 100%;
+  max-width: 685px;
+  border: none !important;
+  padding: 0.75rem 36px 0.75rem 1rem;
+  color: var(--searchText);
+    font-size: 15px;
+}
+
+.input:focus-visible {
+  outline: none !important;
+}
+
+.button {
+    width: 54px;
+    height: 46px;
+    border-radius: 5px;
+    background: var(--searchBG);
+    color: var(--searchText);
+    border: none !important;
+}
+.icon{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+.ul{
+    list-style: none;
+    padding: 0;
+    border-radius: 5px;
+    background: var(--searchListBG);
+    box-shadow: 3px 4px 34px 0px #022256;
+    width: 100%;
+    position: absolute;
+    top: 55px;
+}
+
+
+.ul li{
+    padding: 10px;
+    cursor: pointer;
+}
+
+.ul a{
+    color: var(--Text) !important;
+    text-decoration: none !important;
+}
+
+.ul li:hover {
+    background: var(--hoverBg);
+    border-radius: 5px;
+}
+
+.ul li:not(:last-child) {
+    border-bottom: 1px solid #8092B0;
+}

@@ -1,0 +1,30 @@
+.imageGallery {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.imageGallery li {
+    flex: 1 1 auto;
+    /* flex: auto; */
+    height: 180px;
+    cursor: pointer;
+    position: relative;
+}
+
+.imageGallery::after {
+    content: "";
+    flex-grow: 999;
+}
+
+.imageGallery li img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    border-radius: 5px;
+}

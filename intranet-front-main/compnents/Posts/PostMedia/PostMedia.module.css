@@ -1,0 +1,41 @@
+.dropzoneWrapper {
+    padding: 0rem 1.5rem;
+    /* max-height: 300px;
+    overflow-y: auto; */
+}
+
+.dropzone {
+    height: 134px;
+    background-color: var(--upcomingCardTitle);
+    border-radius: 10px;
+    padding: 24px 0px 24px 0px;
+}
+
+.dropzone p {
+    color: var(--primary-color);
+    margin: 0;
+}
+
+.dropzone p:nth-of-type(1) {
+    font-weight: 600;
+    font-size: 16;
+}
+
+.dropzone p:nth-of-type(1) {
+    font-weight: 400;
+    font-size: 14;
+}
+
+.dropzoneWrapper button {
+    background-color: var(--IconXBG) !important;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: unset;
+    outline: unset;
+    color: #fff;
+    resize: unset;
+}
+/* body #__next {
+    overflow: hidden;
+} */

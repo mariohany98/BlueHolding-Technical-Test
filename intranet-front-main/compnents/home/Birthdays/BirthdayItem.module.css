@@ -1,0 +1,29 @@
+.BirthDayItem {
+  padding-bottom: 8px;
+}
+
+.BirthDayItem:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 8px;
+}
+
+.BirthdayItemImage {
+  border-radius: 8px;
+  border: 1px solid black;
+}
+.BirthdayItemText > p:nth-child(1) {
+  /* width: 138px; */
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.BirthdayItemText > p:nth-child(2) {
+  /* width: 138px; */
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.BirthdayItemLine {
+  
+  margin: auto;
+}

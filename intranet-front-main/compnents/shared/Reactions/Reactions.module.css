@@ -1,0 +1,37 @@
+.reactionsHolder {
+    display: flex;
+    width: 150px !important;
+    justify-content: space-around;
+    background: var(--BGINBG);;
+    box-shadow: 3px 3px 30px rgba(0, 10, 10, 0.2);
+    padding: 10px;
+    border-radius: 60px;
+    position: absolute;
+    top: -70px;
+    left: -3px;
+}
+
+.reactionsHolder img {
+    cursor: pointer;
+}
+
+.likeBtn {
+    cursor: pointer;
+    width: fit-content;
+}
+
+.likeBtn small {
+    display: flex;
+    align-items: center;
+}
+.reactionsList{
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.reactionsList img {
+    margin-inline-start: -5px;
+}
+.reactionsList img:first-of-type{
+    margin-inline-start: 0;
+}

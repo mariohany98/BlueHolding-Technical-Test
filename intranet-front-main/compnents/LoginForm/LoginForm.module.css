@@ -1,0 +1,81 @@
+.Conatiner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.Conatiner form {
+  max-width: 528px;
+  margin: 0 auto;
+  border-radius: 35px;
+  background: var(--searchBG);
+  box-shadow: 3px 4px 35px 0px rgba(255, 255, 255, 0.1);
+  padding: 96px 48px;
+  border: 1px solid var(--Border);
+}
+
+.Conatiner form h1 {
+  font-size: 6.25rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: Bebas Neue;
+}
+
+.Conatiner form label {
+  display: block;
+  text-align: left;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0.2px;
+}
+
+.Conatiner form input {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #6f6f6f;
+  background: #fff;
+  padding: 13px 1rem;
+  color: #6f6f6f !important;
+}
+
+.Conatiner form button {
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  border-radius: 10px;
+  border: 1px solid #8092b0;
+  background: #41587c;
+}
+
+.error{
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    color: red;
+    text-align: left !important;
+}
+
+.rememberme{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* .rememberme input{
+  Width: 20px !important; 
+  Height: 20px !important;
+  vertical-align: middle;
+    border: 1px solid #ddd;
+    outline: none;
+    cursor: pointer;
+} */
+
+
+.rememberme label {
+  font-size: 14px !important;
+}

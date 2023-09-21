@@ -1,0 +1,86 @@
+.popup {
+    width: 50vw;
+    position: fixed;
+    z-index: 1001;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    background-color: var(--BG);
+}
+.popupContent {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.popup header {
+    border-bottom: 1px solid var(--Border);
+    padding: 1.5rem;
+}
+
+
+
+.popup footer {
+    border-top: 1px solid var(--Border);
+    padding: 1.5rem;
+}
+
+.popup .subHeader {
+    padding: 1.5rem;
+}
+
+.popup .subHeader button,
+.popup .subHeader textarea,
+.popup footer button,
+.popup header button {
+    background: unset;
+    border: unset;
+    outline: unset;
+    color: var(--Text);
+    resize: unset;
+}
+
+.popup header button {
+    background-color: var(--IconXBG) !important;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    color: #fff;
+}
+
+.popup .subHeader textarea::placeholder {
+    color: var(--SubText);
+    opacity: 1; /* Firefox */
+}
+
+.popup .subHeader textarea:-ms-input-placeholder {
+    color: var(--SubText);
+}
+
+.popup label {
+    cursor: pointer;
+}
+
+.popup input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid #6F6F6F;
+}
+
+
+
+.action button {
+    background-color: var(--BtnBG) !important;
+    color: var(--BtnText) !important;
+    border-radius: 10px;
+    padding: 0.75rem 1rem 0.75rem 1rem;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 800px) {
+    .popup {
+        width: 90vw;
+    }
+}

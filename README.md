@@ -58,13 +58,13 @@ Before you begin, ensure you have the following:
 
 ## Docker engine installation
 
-1. **Install docker**
+1. **Install docker:**
 
 curl -fsSL https://get.docker.com -o get-docker.sh
 
 sudo sh ./get-docker.sh 
 
-2. **Start and enable the Docker service**
+2. **Start and enable the Docker service:**
 
 sudo systemctl start docker
 
@@ -72,26 +72,27 @@ sudo systemctl enable docker
 
 ## Git installation 
 
-1. **Install git**
+1. **Install git:**
 
 sudo apt install git
 
-2. **configure git**
+2. **configure git:**
 
 sudo git config --global user.name "mariohany98"
+
 sudo git config --global user.email "mariohany98@gmail.com"
 
 ## Generate SSH Key Pair To securely connect to Git repositories using SSH
 
-1. **install ssh**
+1. **install ssh:**
 
 sudo apt install ssh
 
-2. **generate a private and public key pair**
+2. **generate a private and public key pair:**
 
 ssh-keygen -t rsa
 
-3. **copy the public key to git server**
+3. **copy the public key to git server:**
 
 copy the content of the following file: /home/mario/.ssh/id_rsa.pub
 

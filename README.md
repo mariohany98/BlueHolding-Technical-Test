@@ -78,9 +78,9 @@ sudo apt install git
 
 2. **configure git:**
 
-sudo git config --global user.name "mariohany98"
+git config --global user.name "mariohany98"
 
-sudo git config --global user.email "mariohany98@gmail.com"
+git config --global user.email "mariohany98@gmail.com"
 
 ## Generate SSH Key Pair To securely connect to Git repositories using SSH
 

@@ -164,7 +164,7 @@ cd ./BlueHolding-Technical-Test/blue-internal-back-master
 
 cat .env.example > .env
 
-3. **Only modify the highlight lines in .env file as the following:**
+3. **Only modify the highlighted lines in .env file as the following:**
 
 ![Screenshot 2023-09-23 234738](https://github.com/mariohany98/BlueHolding-Technical-Test/assets/143083001/ab2a529d-f40b-4fd0-9ae3-af62cc3d3f8e)
 
@@ -261,7 +261,7 @@ apt install nodejs
 
 apt install npm
 
-12. **Check that the install was successful:**
+12. **Check that the installation was successful:**
 
 node -v
 

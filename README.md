@@ -310,3 +310,9 @@ sudo docker commit e0325 mariohany98/php-vuejs-app
 2. **Push the image to a GitHub repository:**
 
 sudo docker push mariohany98/php-vuejs-app
+
+## Author 
+
+Mario Hany
+
+Feel free to contribute, report issues, or suggest improvements. 

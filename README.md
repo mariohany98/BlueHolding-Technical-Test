@@ -135,4 +135,3 @@ sudo docker tag next-app mariohany98/nextjs-app:latest
 sudo docker push mariohany98/nextjs-app:latest
 
 ## PHP Laravel application Containerization
-

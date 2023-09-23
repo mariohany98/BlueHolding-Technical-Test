@@ -1,5 +1,25 @@
 # BlueHolding-Technical-Test
 
+# Table of Contents
+
+1. [BlueHolding-Technical-Test](#blueholding-technical-test)
+2. [Setting Up Ubuntu 20.04 on a Virtual Machine](#setting-up-ubuntu-2004-on-a-virtual-machine)
+    1. [Prerequisites](#prerequisites)
+    2. [Installation Steps](#installation-steps)
+3. [Docker Engine Installation](#docker-engine-installation)
+4. [Git Installation](#git-installation)
+5. [Generate SSH Key Pair](#generate-ssh-key-pair-to-securely-connect-to-git-repositories-using-ssh)
+6. [Clone the Repository](#clone-the-repository-to-my-local-machine)
+7. [Next.js Application Dockerization](#nextjs-application-dockerization)
+8. [PHP Laravel Application Dockerization](#php-laravel-application-dockerization)
+9. [Environment Settings File Creation](#environment-settings-file-creation)
+10. [Docker Compose File Creation](#docker-compose-file-creation)
+11. [Applications Deployment](#applications-deployment)
+12. [Configure The PHP Container And Configure The App’s Virtual Host in Apache](#configure-the-php-container-and-configure-the-apps-virtual-host-in-apache)
+13. [Access the Applications in The Browser](#access-the-applications-in-the-browser)
+14. [Dockerize PHP Container Again](#i-have-dockerized-the-php-container-again-so-that-i-dont-lose-all-the-previous-changes-when-the-container-stops)
+15. [Author](#author)
+
 ## Setting Up Ubuntu 20.04 on a Virtual Machine
 
 ### Prerequisites

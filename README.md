@@ -104,13 +104,13 @@ paste the public key and save
 
 git clone git@github.com:mariohany98/BlueHolding-Technical-Test.git
 
-## Next.js application Containerization
+## Next.js application Dockerization
 
 1. **Navigate to the code repository:**
 
 cd ./BlueHolding-Technical-Test/intranet-front-main
 
-2. **Create Dockerfile for Next.js app**
+2. **Create Dockerfile for Next.js App**
 
 vim Dockerfile
 
@@ -134,4 +134,179 @@ sudo docker tag next-app mariohany98/nextjs-app:latest
 
 sudo docker push mariohany98/nextjs-app:latest
 
-## PHP Laravel application Containerization
+## PHP Laravel application Dockerization
+
+1. **Navigate to the code repository:**
+
+cd ./BlueHolding-Technical-Test/blue-internal-back-master
+
+2. **Create Dockerfile for PHP App**
+
+vim Dockerfile
+
+![Screenshot 2023-09-23 232440](https://github.com/mariohany98/BlueHolding-Technical-Test/assets/143083001/e267c4f5-c93e-4edc-bc49-05a773f55ae3)
+
+3. **Build docker image**
+
+sudo docker build -t mariohany98/php-app:2 .
+
+4. **Push the Docker Image to DockerHub:**
+
+sudo docker push mariohany98/php-app:2
+
+## Environment Settings File Creation
+
+1. **Navigate to the code repository:**
+
+cd ./BlueHolding-Technical-Test/blue-internal-back-master
+
+2. **Create the file:**
+
+cat .env.example > .env
+
+3. **Only modify the highlight lines in .env file as the following:**
+
+![Screenshot 2023-09-23 234738](https://github.com/mariohany98/BlueHolding-Technical-Test/assets/143083001/ab2a529d-f40b-4fd0-9ae3-af62cc3d3f8e)
+
+
+## Docker Compose File Creation
+
+1. **Navigate to the code repository:**
+
+cd ./BlueHolding-Technical-Test/blue-internal-back-master
+
+2. **Create The Docker compose file:**
+
+sudo vim docker-compose.yml
+
+![Screenshot 2023-09-23 235626](https://github.com/mariohany98/BlueHolding-Technical-Test/assets/143083001/f827d156-ec3e-409d-a779-c373a29aaca7)
+
+**Important Notes:**
+
+1- Both the .env file and the docker-compose.yaml file must be in the same directory.
+
+2- The service name of the mysql-db container in the docker-compose.yaml file must be the same as the value of DB_HOST in the .env file.
+
+## Applications Deployment
+
+1. **Navigate to the code repository:**
+
+cd ./BlueHolding-Technical-Test/blue-internal-back-master
+
+2. **Run the containers:**
+
+sudo docker compose up -d
+
+## Configure The PHP Container And Configure The App’s Virtual Host in Apache
+
+1. **Execute an interactive shell session (/bin/sh) inside the PHP Docker container:**
+
+sudo docker exec -it php /bin/sh
+
+2. **Navigate to /var/www/html/ :**
+
+cd /var/www/html
+
+3. **Run the following commands:**
+
+chown -R www-data:www-data /var/www/html
+
+* This command changes the owner and group of the directory and everything in the directory to www-data. www-data is the default user web servers like Apache.
+
+chmod -R 755 /var/www/html  
+
+* This command gives full permission to the user on the directory and everything in the directory. Also it gives only read and execute permission to group and others.
+
+chmod -R 777 /var/www/html/storage  
+
+* This command gives full permissions on these directory, so that no matter what process executes the Laravel application, it will be able to read from and write to them. 
+
+4. **Install the dependencies specified in the composer.json**
+
+composer install
+
+5. **Install Vim editor:**
+
+apt-get install vim
+
+6. **Copy the 000-default.conf file and give it a new name (laravel.conf):**
+
+cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/laravel.conf
+
+7. **Edit laravel.conf as follows:**
+
+vim /etc/apache2/sites-available/laravel.conf
+
+![Screenshot 2023-09-23 193502](https://github.com/mariohany98/BlueHolding-Technical-Test/assets/143083001/2cc5a325-c77b-4135-a186-0a39ae89545e)
+
+8. **Disable the default Apache site:**
+
+a2dissite 000-default.conf
+
+9. **Enable the Laravel App’s site and mod_rewrite:**
+
+a2enmod rewrite
+
+a2ensite laravel.conf
+
+10. **Reload apache service:**
+
+service apache2 reload
+
+11. **Install Node.JS and npm:**
+
+apt update
+
+apt install nodejs
+
+apt install npm
+
+12. **Check that the install was successful:**
+
+node -v
+
+13. **Navigate to /var/www/html/ :**
+
+cd /var/www/html
+
+14. **Apply database migrations and seed the database:**
+
+php artisan migrate --seed
+
+15. **Generate JWT secret key for JWT authentication:**
+
+php artisan jwt:secret
+
+16. **Install all the dependencies listed in package.json and prepare the application for production use:**
+
+npm install && npm run production
+
+17. **Start the web server:**
+
+php artisan serve
+
+## Access the Applications in The Browser
+
+1.**NextJS Application**
+
+http://localhost:3000
+
+![Screenshot 2023-09-23 192352](https://github.com/mariohany98/BlueHolding-Technical-Test/assets/143083001/06a25718-8ba2-417d-a5f4-f767e8fdbae0)
+
+2. **PHP Application**
+
+http://localhost:8000
+
+![Screenshot 2023-09-23 192423](https://github.com/mariohany98/BlueHolding-Technical-Test/assets/143083001/128475c5-b69b-4a58-ba05-b9520ef6cfd8)
+
+![Screenshot 2023-09-23 192616](https://github.com/mariohany98/BlueHolding-Technical-Test/assets/143083001/d12d3bf4-1c08-48b0-a411-e41c709fa11a)
+
+## I have Dockerized the PHP container again so that i don't lose all the previous changes when the container stops
+
+1. **Commit the changes to a new image:**
+
+sudo docker commit e0325 mariohany98/php-vuejs-app
+
+2. **Push the image to a GitHub repository:**
+
+sudo docker push mariohany98/php-vuejs-app

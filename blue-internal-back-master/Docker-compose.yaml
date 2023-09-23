@@ -1,0 +1,36 @@
+version: "3"
+services:
+    # PHP-VUE App
+    php:
+        container_name: php
+        image: php-app:2
+        environment:
+            - APP_ENV=${APP_ENV}
+        volumes:
+            - .:/var/www/html
+        ports:
+            - 8000:80
+        depends_on:
+            - mysql-db
+            - node
+
+    # Database Server
+    mysql-db:
+        container_name: mysql-db
+        image: mysql
+        ports:
+            - 3306:3306
+        environment:
+            - MYSQL_DATABASE=${DB_DATABASE}
+            - MYSQL_USER=${DB_USERNAME}
+            - MYSQL_PASSWORD=${DB_PASSWORD}
+            - MYSQL_ROOT_PASSWORD=${DB_PASSWORD}
+        volumes:
+            - /home/mario/mysql_data:/var/lib/mysql
+
+    # NextJs
+    nextjs:
+        container_name: nextjs
+        image: next-app
+        ports:
+            - 3000:3000

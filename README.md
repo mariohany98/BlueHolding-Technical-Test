@@ -331,6 +331,8 @@ sudo docker commit e0325 mariohany98/php-vuejs-app
 
 sudo docker push mariohany98/php-vuejs-app
 
+3. **If the running PHP container has stopped unexpectedly or intentionally. Set the new Docker image (mariohany98/php-vuejs-app) in Docker Compose file before running it**
+
 ## Author 
 
 Mario Hany

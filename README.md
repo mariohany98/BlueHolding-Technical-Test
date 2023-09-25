@@ -19,6 +19,7 @@
 13. [Access the Applications in The Browser](#access-the-applications-in-the-browser)
 14. [Dockerize PHP Container Again](#i-have-dockerized-the-php-container-again-so-that-i-dont-lose-all-the-previous-changes-when-the-container-stops)
 15. [Author](#author)
+16. [Important Note](#Important Note)
 
 ## Setting Up Ubuntu 20.04 on a Virtual Machine
 
@@ -332,6 +333,10 @@ sudo docker commit e0325 mariohany98/php-vuejs-app
 sudo docker push mariohany98/php-vuejs-app
 
 3. **If the running PHP container has stopped unexpectedly or intentionally. Set the new Docker image (mariohany98/php-vuejs-app) in Docker Compose file before running it**
+
+## Important Note
+
+Running containers in single docker host my be good for development and test environment, but in production environment this is not a good idea as this is single point of failure and to To avoid it we should use an orchestration tools like Kubernetes or Docker swarm for high availability and load balancing.
 
 ## Author 
 

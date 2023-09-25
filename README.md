@@ -19,7 +19,6 @@
 13. [Access the Applications in The Browser](#access-the-applications-in-the-browser)
 14. [Dockerize PHP Container Again](#i-have-dockerized-the-php-container-again-so-that-i-dont-lose-all-the-previous-changes-when-the-container-stops)
 15. [Author](#author)
-16. [Important Note](#Important Note)
 
 ## Setting Up Ubuntu 20.04 on a Virtual Machine
 

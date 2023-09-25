@@ -335,7 +335,7 @@ sudo docker push mariohany98/php-vuejs-app
 
 ## Important Note
 
-Running containers in single docker host my be good for development and test environment, but in production environment this is not a good idea as this is single point of failure and to To avoid it we should use an orchestration tools like Kubernetes or Docker swarm for high availability and load balancing.
+Running containers on a single docker host may be good for development and test environment, but in production environment this is not a good idea as this is a single point of failure and to avoid it we should use an orchestration tools like Kubernetes or Docker swarm for high availability and load balancing.
 
 ## Author 
 
